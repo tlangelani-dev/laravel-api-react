@@ -48,7 +48,9 @@ class BlogController extends Controller
      */
     public function show($id)
     {
+        $blog = Blog::find($id);
 
+        return response()->json($blog);
     }
 
     /**
