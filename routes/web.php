@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\DB;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +16,8 @@
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/testing', function () {
+    return DB::table('blogs')->get();
 });
