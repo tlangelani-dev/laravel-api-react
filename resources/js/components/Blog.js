@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import axios from 'axios';
 
-export default class Blog extends Component {
+class Blog extends Component {
     constructor() {
         super();
         this.state = {
@@ -31,6 +30,4 @@ export default class Blog extends Component {
     }
 }
 
-if (document.getElementById('root')) {
-    ReactDOM.render(<Blog />, document.getElementById('root'));
-}
+export default Blog;
